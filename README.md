@@ -6,7 +6,7 @@ Developed during my tenure at Ivivce Technologies, Easy My Trips is an advanced 
 
 Welcome to Easy My Trips - Your One-Stop Booking Solution for Trains, Buses, Cars, and Cruises!
 
-Custom hosted on [Git Hosted Live Project Page](https://shubham29o3.github.io/EasyMyTrips-UnifiedTravelBookingSystem/)
+Custom hosted on [Git Hosted Live Project Page](https://shubham29o3.github.io/EasyMyTrips-UnifiedTravelBooking/)
 
 Visit the live project: [Easy My Trips](https://easymyTrips.co.uk)
 
