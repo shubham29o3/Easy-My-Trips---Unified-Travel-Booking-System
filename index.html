@@ -1,0 +1,913 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Easy My Trips</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link href="https://fonts.googleapis.com/css?family=Mukta+Mahee:200,300,400|Abril+Fatface:400,700" rel="stylesheet">
+
+  <meta name="description" content="Free Template by Free-Template.co" />
+  <meta name="keywords" content="free template, free bootstrap, free website template" />
+  <meta name="author" content="Free-Template.co" />
+
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/aos.css">
+  <link rel="stylesheet" href="css/fancybox.min.css">
+  <link rel="stylesheet" href="css/animsition.min.css">
+
+
+  <link rel="stylesheet" href="fonts/ionicons/css/ionicons.min.css">
+  <link rel="stylesheet" href="fonts/fontawesome/css/font-awesome.min.css">
+
+  <!-- Theme Style -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- 
+    //////////////////////////////////////////////////////
+
+    Free Template 
+    DESIGNED & DEVELOPED by free-template.co
+      
+    Website:    https://free-template.co
+    Email:      freetemplate.co@gmail.com
+    Twitter:    https://twitter.com/Free_Templateco
+    Facebook:   https://www.facebook.com/Free.Template.co/
+
+    //////////////////////////////////////////////////////
+     -->
+     <style>
+      @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+  
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
+      }
+  
+      nav {
+        position: fixed;
+        z-index: 99;
+        width: 100%;
+        /* opacity: .4;
+    background: #242526; */
+        /*background: #242526; */
+        background-color: rgb(255, 255, 255);
+  
+  
+      }
+  
+      nav .wrapper {
+        position: relative;
+        max-width: 1300px;
+        padding: 0px 30px;
+        height: 70px;
+        line-height: 70px;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+  
+      .wrapper .logo a {
+        color: #000000;
+        font-size: 30px;
+        font-weight: 600;
+        text-decoration: none;
+      }
+  
+      .wrapper .nav-links {
+        display: inline-flex;
+      }
+  
+      .nav-links li {
+        list-style: none;
+      }
+  
+      .nav-links li a {
+        color: #000000;
+        text-decoration: none;
+        font-size: 18px;
+        font-weight: 500;
+        padding: 9px 15px;
+        border-radius: 5px;
+        transition: all 0.3s ease;
+      }
+  
+      .nav-links li a:hover {
+        background: #3A3B3C;
+      }
+  
+      .nav-links .mobile-item {
+        display: none;
+      }
+  
+      .nav-links .drop-menu {
+        position: absolute;
+        background: #242526;
+        width: 180px;
+        line-height: 45px;
+        top: 85px;
+        opacity: 0;
+        visibility: hidden;
+        box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+      }
+  
+      .nav-links li:hover .drop-menu,
+      .nav-links li:hover .mega-box {
+        transition: all 0.3s ease;
+        top: 70px;
+        opacity: 1;
+        visibility: visible;
+      }
+  
+      .drop-menu li a {
+        width: 100%;
+        display: block;
+        padding: 0 0 0 15px;
+        font-weight: 400;
+        border-radius: 0px;
+      }
+  
+      .mega-box {
+        position: absolute;
+        left: 0;
+        width: 100%;
+        padding: 0 30px;
+        top: 85px;
+        opacity: 0;
+        visibility: hidden;
+      }
+  
+      .mega-box .content {
+        background: #242526;
+        padding: 25px 20px;
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+      }
+  
+      .mega-box .content .row {
+        width: calc(25% - 30px);
+        line-height: 45px;
+      }
+  
+      .content .row img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+  
+      .content .row header {
+        color: #ffffff;
+        font-size: 20px;
+        font-weight: 500;
+      }
+  
+      .content .row .mega-links {
+        margin-left: -40px;
+        border-left: 1px solid rgba(255, 255, 255, 0.09);
+      }
+  
+      .row .mega-links li {
+        padding: 0 20px;
+      }
+  
+      .row .mega-links li a {
+        padding: 0px;
+        padding: 0 20px;
+        color: #ffffff;
+        font-size: 17px;
+        display: block;
+      }
+  
+      .row .mega-links li a:hover {
+        color: #ffffff;
+      }
+  
+      .wrapper .btn {
+        color: #fff;
+        font-size: 20px;
+        cursor: pointer;
+        display: none;
+      }
+  
+      .wrapper .btn.close-btn {
+        position: absolute;
+        right: 30px;
+        top: 10px;
+      }
+  
+      @media screen and (max-width: 970px) {
+        .wrapper .btn {
+          display: block;
+        }
+  
+        .wrapper .nav-links {
+          position: fixed;
+          height: 100vh;
+          width: 100%;
+          max-width: 350px;
+          top: 0;
+          left: -100%;
+          background: #242526;
+          display: block;
+          padding: 50px 10px;
+          line-height: 50px;
+          overflow-y: auto;
+          box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.18);
+          transition: all 0.3s ease;
+        }
+  
+        /* custom scroll bar */
+        ::-webkit-scrollbar {
+          width: 10px;
+        }
+  
+        ::-webkit-scrollbar-track {
+          background: #242526;
+        }
+  
+        ::-webkit-scrollbar-thumb {
+          background: #3A3B3C;
+        }
+  
+        #menu-btn:checked~.nav-links {
+          left: 0%;
+        }
+  
+        #menu-btn:checked~.btn.menu-btn {
+          display: none;
+        }
+  
+        #close-btn:checked~.btn.menu-btn {
+          display: block;
+        }
+  
+        .nav-links li {
+          margin: 15px 10px;
+        }
+  
+        .nav-links li a {
+          padding: 0 20px;
+          display: block;
+          font-size: 20px;
+        }
+  
+        .nav-links .drop-menu {
+          position: static;
+          opacity: 1;
+          top: 65px;
+          visibility: visible;
+          padding-left: 20px;
+          width: 100%;
+          max-height: 0px;
+          overflow: hidden;
+          box-shadow: none;
+          transition: all 0.3s ease;
+        }
+  
+        #showDrop:checked~.drop-menu,
+        #showMega:checked~.mega-box {
+          max-height: 100%;
+        }
+  
+        .nav-links .desktop-item {
+          display: none;
+        }
+  
+        .nav-links .mobile-item {
+          display: block;
+          color: #ffffff;
+          font-size: 20px;
+          font-weight: 500;
+          padding-left: 20px;
+          cursor: pointer;
+          border-radius: 5px;
+          transition: all 0.3s ease;
+        }
+  
+        .nav-links .mobile-item:hover {
+          background: #3A3B3C;
+        }
+  
+        .drop-menu li {
+          margin: 0;
+        }
+  
+        .drop-menu li a {
+          border-radius: 5px;
+          font-size: 18px;
+        }
+  
+        .mega-box {
+          position: static;
+          top: 65px;
+          opacity: 1;
+          visibility: visible;
+          padding: 0 20px;
+          max-height: 0px;
+          overflow: hidden;
+          transition: all 0.3s ease;
+        }
+  
+        .mega-box .content {
+          box-shadow: none;
+          flex-direction: column;
+          padding: 20px 20px 0 20px;
+        }
+  
+        .mega-box .content .row {
+          width: 100%;
+          margin-bottom: 15px;
+          border-top: 1px solid rgba(255, 255, 255, 0.08);
+        }
+  
+        .mega-box .content .row:nth-child(1),
+        .mega-box .content .row:nth-child(2) {
+          border-top: 0px;
+        }
+  
+        .content .row .mega-links {
+          border-left: 0px;
+          padding-left: 15px;
+        }
+  
+        .row .mega-links li {
+          margin: 0;
+        }
+  
+        .content .row header {
+          font-size: 19px;
+        }
+      }
+  
+      nav input {
+        display: none;
+      }
+  
+      .body-text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        text-align: center;
+        padding: 0 30px;
+      }
+  
+      .body-text div {
+        font-size: 45px;
+        font-weight: 600;
+      }
+    </style>
+
+
+</head>
+
+<body>
+  <!-- dkhfbvkebfvk -->
+
+  <nav>
+    <div class="wrapper">
+      <div class="logo"><a href="#">Easy My Trips</a></div>
+      <input type="radio" name="slider" id="menu-btn">
+      <input type="radio" name="slider" id="close-btn">
+      <ul class="nav-links">
+        <label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="terms.html">Terms &amp; Conditions</a></li>
+        <li><a href="privacy.html">Privacy Policy</a></li>
+        <!-- <li>
+            <a href="#" class="desktop-item">Dropdown Menu</a>
+            <input type="checkbox" id="showDrop">
+            <label for="showDrop" class="mobile-item">Dropdown Menu</label>
+            <ul class="drop-menu">
+              <li><a href="#">Drop menu 1</a></li>
+              <li><a href="#">Drop menu 2</a></li>
+              <li><a href="#">Drop menu 3</a></li>
+              <li><a href="#">Drop menu 4</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#" class="desktop-item">Mega Menu</a>
+            <input type="checkbox" id="showMega">
+            <label for="showMega" class="mobile-item">Mega Menu</label>
+            <div class="mega-box">
+              <div class="content">
+                <div class="row">
+                  <img src="https://fadzrinmadu.github.io/hosted-assets/responsive-mega-menu-and-dropdown-menu-using-only-html-and-css/img.jpg" alt="">
+                </div>
+                <div class="row">
+                  <header>Design Services</header>
+                  <ul class="mega-links">
+                    <li><a href="#">Graphics</a></li>
+                    <li><a href="#">Vectors</a></li>
+                    <li><a href="#">Business cards</a></li>
+                    <li><a href="#">Custom logo</a></li>
+                  </ul>
+                </div>
+                <div class="row">
+                  <header>Email Services</header>
+                  <ul class="mega-links">
+                    <li><a href="#">Personal Email</a></li>
+                    <li><a href="#">Business Email</a></li>
+                    <li><a href="#">Mobile Email</a></li>
+                    <li><a href="#">Web Marketing</a></li>
+                  </ul>
+                </div>
+                <div class="row">
+                  <header>Security services</header>
+                  <ul class="mega-links">
+                    <li><a href="#">Site Seal</a></li>
+                    <li><a href="#">VPS Hosting</a></li>
+                    <li><a href="#">Privacy Seal</a></li>
+                    <li><a href="#">Website design</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </li> -->
+        <!-- <li><a href="#">Feedback</a></li> -->
+      </ul>
+      <label for="menu-btn" class="btn menu-btn"><i class="fas fa-bars"></i></label>
+    </div>
+  </nav>
+
+
+
+
+
+
+
+
+
+
+  <!-- ekrug -->
+  <div class="js-animsition animsition" id="site-wrap" data-animsition-in-class="fade-in"
+    data-animsition-out-class="fade-out">
+
+    <header class="site-header" style="margin-top: 30px;">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-4 site-logo" data-aos="fade"><a href="index.html" class="animsition-link">Easy My Trips</a>
+          </div>
+          <div class="col-8">
+
+
+            <div class="site-menu-toggle js-site-menu-toggle" data-aos="fade">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <!-- END menu-toggle -->
+
+            <div class="site-navbar js-site-navbar">
+              <nav role="navigation">
+                <div class="container">
+                  <div class="row full-height align-items-center">
+                    <div class="col-md-12 justify-content-center">
+                      <ul class="list-unstyled menu">
+                        <li class="active"><a href="index.html" class="animsition-link">Home</a></li>
+                        <li><a href="services.html" class="animsition-link">Servies</a></li>
+                        <li><a href="about.html" class="animsition-link">About Us</a></li>
+                        <!-- <li><a href="gallery.html" class="animsition-link">Gallery</a></li>
+                        <li><a href="blog.html" class="animsition-link">News</a></li> -->
+                        <li><a href="contact.html" class="animsition-link">Contact Us</a></li>
+                        <li><a href="terms.html" class="animsition-link">Terms &amp; Conditions</a></li>
+                        <li><a href="privacy.html" class="animsition-link">Privacy Policy</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- END head -->
+
+    <section class="site-hero overlay" style="background-image: url(images/hero_1.jpg)">
+      <div class="container">
+        <div class="row site-hero-inner justify-content-center align-items-center">
+          <div class="col-md-10 text-center">
+            <h1 class="heading mb-4" data-aos="fade-up">Seamless Travel Experiences</h1>
+            <p class="sub-heading mb-5" data-aos="fade-up" data-aos-delay="100">
+              Unlock Unforgettable Adventures with our Expert Travel Guidance.
+            </p>
+            <!-- <p class="sub-heading mb-5" data-aos="fade-up" data-aos-delay="100">
+              Unlock Unforgettable Adventures with our Expert Travel Guidance. <a href="https://free-template.co" target="_blank">Free-Template.co</a>. Download and share!
+            </p> -->
+            <p class="pt-4" data-aos="fade-up" data-aos-delay="100">
+              <a href="tel:07359598480" target="_blank"
+                class="btn uppercase btn-outline-light d-sm-inline d-block py-3">Get my tickets now</a>
+            </p>
+          </div>
+        </div>
+        <p data-aos="fade-up" data-aos-offset="-500"><a href="#next-section" class="scroll-down smoothscroll"> <span
+              class="fa fa-play"></span> Scroll Down</a></p>
+      </div>
+    </section>
+    <!-- END section -->
+
+
+    <section class="section" id="next-section">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6 mb-4" data-aos="fade-up">
+            <p><img src="images/img_1_long.jpg" alt="Free Template by Free-Template.co" class="img-fluid"></p>
+          </div>
+          <div class="col-lg-6 pl-lg-5" data-aos="fade-up">
+            <h2 class="mb-4">Embark on Effortless Journeys: Your Ticket to Seamless Travel Experiences</h2>
+            <p>Welcome to the ultimate travel hub! At Easy
+              My Trips, we're thrilled to be your go-to destination for hassle-free travel arrangements. Whether you're
+              setting sail on a cruise, embarking on a scenic train journey, hopping on a bus adventure, or hitting the
+              road in a car, we've got you covered. Our platform simplifies the booking process, making it a breeze to
+              plan and secure your tickets for any mode of transportation. Enjoy the freedom to explore – your seamless
+              journey awaits!</p>
+            <!-- <p class="pt-4">
+              <a href="https://vimeo.com/channels/staffpicks/93951774"  data-fancybox class="btn-play d-flex">
+                <span class="icon align-self-center mr-3"><span class="fa fa-play"></span></span>
+                <span class="text align-self-center">Watch The Video</span>
+              </a>
+            </p> -->
+            <p class="pt-4" data-aos="fade-up" data-aos-delay="100">
+              <a href="tel:07359598480" target="_blank"><b>Get my tickets now @ 07359598480</b></a>
+            </p>
+            <p class="mt-5"><a href="tel:07359598480" class="btn btn-primary uppercase">Call now</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section bg-light-2">
+      <div class="container">
+        <div class="row justify-content-center text-center mb-5">
+          <div class="col-md-8">
+            <h2 class="heading" data-aos="fade-up">Crafting Memories, Inspiring Journeys.</h2>
+            <p class="lead" data-aos="fade-up" data-aos-delay="100">At Easy my Trips, we believe in turning every trip
+              into an unforgettable adventure. With a passion for travel and a commitment to excellence, we curate
+              experiences that go beyond the ordinary. From pristine beaches to bustling cities, our expert team is
+              dedicated to crafting seamless and personalized journeys. Discover the world with confidence, guided by a
+              partner who understands that the joy is in the journey. Welcome to travel, redefined.</p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up">
+            <div class="d-block ftco-img-flaticon">
+              <img src="fonts/flaticon/svg/001-breakfast.svg" alt="Free Template by Free-Template.co"
+                class="img-fluid mb-4">
+              <h3>Train Booking</h3>
+              <p>Embark on seamless train journeys with our easy booking platform. </p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="d-block ftco-img-flaticon">
+              <img src="fonts/flaticon/svg/002-planet-earth.svg" alt="Free Template by Free-Template.co"
+                class="img-fluid mb-4">
+              <h3>Global Getaways</h3>
+              <p>Discover the world hassle-free; book your travel to any destination effortlessly </p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="d-block ftco-img-flaticon">
+              <img src="fonts/flaticon/svg/003-airplane.svg" alt="Free Template by Free-Template.co"
+                class="img-fluid mb-4">
+              <h3>Airplane</h3>
+              <p>Take off to new heights with smooth and convenient airplane bookings. </p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="300">
+            <div class="d-block ftco-img-flaticon">
+              <img src="fonts/flaticon/svg/004-beach.svg" alt="Free Template by Free-Template.co"
+                class="img-fluid mb-4">
+              <h3>Resort Retreats</h3>
+              <p>Indulge in opulent escapes – book resorts for a perfect blend of comfort and luxury.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="400">
+            <div class="d-block ftco-img-flaticon">
+              <img src="fonts/flaticon/svg/005-mountains.svg" alt="Free Template by Free-Template.co"
+                class="img-fluid mb-4">
+              <h3>Cruise Cruises</h3>
+              <p>Sail into serenity with effortless cruise bookings and unforgettable maritime experiences. </p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="500">
+            <div class="d-block ftco-img-flaticon">
+              <img src="fonts/flaticon/svg/006-hot-air-balloon.svg" alt="Free Template by Free-Template.co"
+                class="img-fluid mb-4">
+              <h3>Road Travel</h3>
+              <p>Hit the road with confidence – book bus excursions for convenient and comfortable travels. </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="section slider-section">
+      <div class="container">
+        <div class="row justify-content-center text-center mb-5">
+          <div class="col-md-8">
+            <h2 class="heading" data-aos="fade-up">Multi-Destination Tour Management.</h2>
+            <p class="lead" data-aos="fade-up" data-aos-delay="100">Unlock the art of seamless travel with our
+              platform—effortlessly book multiple destinations and embark on a journey that's as smooth as it is
+              extraordinary. Your adventure, your way, simplified.</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="home-slider major-caousel owl-carousel mb-5" data-aos="fade-up" data-aos-delay="200">
+              <div class="slider-item">
+                <img src="images/slider-1.jpg" alt="Image placeholder" class="img-fluid">
+              </div>
+              <div class="slider-item">
+                <img src="images/slider-2.jpg" alt="Image placeholder" class="img-fluid">
+              </div>
+              <div class="slider-item">
+                <img src="images/slider-3.jpg" alt="Image placeholder" class="img-fluid">
+              </div>
+              <div class="slider-item">
+                <img src="images/slider-4.jpg" alt="Image placeholder" class="img-fluid">
+              </div>
+              <div class="slider-item">
+                <img src="images/slider-5.jpg" alt="Image placeholder" class="img-fluid">
+              </div>
+              <div class="slider-item">
+                <img src="images/slider-6.jpg" alt="Image placeholder" class="img-fluid">
+              </div>
+            </div>
+            <!-- END slider -->
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <!-- END section -->
+
+    <section class="section blog-post-entry bg-light slant-top">
+      <div class="container">
+        <div class="row justify-content-center text-center mb-5">
+          <div class="col-md-8 primary-bg-text">
+            <h2 class="heading" data-aos="fade-up">Recent Blog Post</h2>
+            <p class="lead" data-aos="fade-up">Dive into a world of travel inspiration and insider tips. Explore our
+              blogs for a treasure trove of insights, making your journey as enriching as the destinations themselves.
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 col-md-6 col-sm-6 col-12 post" data-aos="fade-up" data-aos-delay="100">
+
+            <div class="media media-custom d-block mb-4">
+              <a href="#" class="mb-4 d-block"><img src="images/img_1.jpg" alt="Image placeholder"
+                  class="img-fluid"></a>
+              <div class="media-body">
+                <span class="meta-post">February 26, 2023</span>
+                <h2 class="mt-0 mb-3"><a href="#">45 Havens of Relaxation</a></h2>
+                <p>Indulge in tranquility with our selection of the '45 Havens of Relaxation.' Explore these idyllic
+                  destinations where peace meets natural beauty...</p>
+              </div>
+            </div>
+
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-6 col-12 post" data-aos="fade-up" data-aos-delay="200">
+            <div class="media media-custom d-block mb-4">
+              <a href="#" class="mb-4 d-block"><img src="images/img_2.jpg" alt="Image placeholder"
+                  class="img-fluid"></a>
+              <div class="media-body">
+                <span class="meta-post">February 26, 2023</span>
+                <h2 class="mt-0 mb-3"><a href="#">45 Retreat Paradises</a></h2>
+                <p>Discover serenity in our curated collection of the '45 Retreat Paradises,' where each destination
+                  promises a perfect blend of relaxation...</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12 col-12 post" data-aos="fade-up" data-aos-delay="300">
+            <div class="media media-custom d-block mb-4">
+              <a href="#" class="mb-4 d-block"><img src="images/img_3.jpg" alt="Image placeholder"
+                  class="img-fluid"></a>
+              <div class="media-body">
+                <span class="meta-post">February 26, 2023</span>
+                <h2 class="mt-0 mb-3"><a href="#">Places To Unwind</a></h2>
+                <p>Escape to tranquility with our curated list of the '45 Best Places To Unwind,' where serenity
+                  meets...</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END section -->
+
+
+
+    <section class="section testimonial-section bg-light-2">
+      <div class="container">
+        <div class="row justify-content-center text-center mb-5">
+          <div class="col-md-8">
+            <h2 class="heading" data-aos="fade-up">Happy Customers</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="testimonial">
+              <div class="author-image mb-3">
+                <img src="images/person_1.jpg" alt="Image placeholder" class="rounded-circle">
+              </div>
+              <blockquote>
+
+                <p>&ldquo;I can't express how delighted I am with 'Easy My Trips'! Planning and booking my dream
+                  vacation was an absolute pleasure. From the seamless process of reserving cruises to the effortless
+                  arrangement of resort stays, every step was a joy. I'm already looking forward to my next adventure
+                  with this exceptional platform that truly turns travel dreams into reality.&rdquo;</p>
+              </blockquote>
+              <p><em>&mdash; Clare Gupta</em></p>
+
+            </div>
+          </div>
+          <!-- END col -->
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="testimonial">
+              <div class="author-image mb-3">
+                <img src="images/person_2.jpg" alt="Image placeholder" class="rounded-circle">
+              </div>
+              <blockquote>
+                <p>&ldquo;My recent experiences with 'Easy My Trips' have been nothing short of fantastic. The
+                  convenience they offer, especially in train bookings, is unparalleled. It's not just about the smooth
+                  transactions; it's about the variety of options available, making every journey stress-free. If you're
+                  looking for a platform that elevates your travel game, 'Easy My Trips' is the way to go.&rdquo;</p>
+              </blockquote>
+              <p><em>&mdash; Rogie Slater</em></p>
+            </div>
+          </div>
+          <!-- END col -->
+
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+            <div class="testimonial">
+              <div class="author-image mb-3">
+                <img src="images/person_3.jpg" alt="Image placeholder" class="rounded-circle">
+              </div>
+              <blockquote>
+
+                <p>&ldquo;I've been using 'Easy My Trips' for all my travel needs, and it has consistently exceeded my
+                  expectations. From airplanes to buses, the range of options is impressive. The user-friendly platform
+                  coupled with their commitment to excellent service has made every booking a pleasure. I confidently
+                  give 'Easy My Trips' a well-deserved five-star rating – they've truly mastered the art of hassle-free
+                  travel.&rdquo;</p>
+              </blockquote>
+              <p><em>&mdash; John Deens</em></p>
+            </div>
+          </div>
+          <!-- END col -->
+        </div>
+      </div>
+    </section>
+
+    <!-- <section class="section visit-section">
+      <div class="container">
+        <div class="row justify-content-center text-center mb-5">
+          <div class="col-md-8 ">
+            <h2 class="heading" data-aos="fade-up">Top Destination</h2>
+            <p class="lead" data-aos="fade-up">LEmbark on a virtual journey to our curated collection of top destinations. Discover travel inspiration and essential insights that will elevate your wanderlust, guiding you towards unforgettable adventures and experiences.</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-3 col-md-6 visit mb-3" data-aos="fade-right">
+            <a href="#"><img src="images/img_1.jpg" alt="Image placeholder" class="img-fluid"> </a>
+            <h3><a href="#">Food &amp; Wines</a></h3>
+            <div class="reviews-star float-left">
+              <span class="ion-android-star"></span>
+              <span class="ion-android-star"></span>
+              <span class="ion-android-star"></span>
+              <span class="ion-android-star-half"></span>
+              <span class="ion-android-star-outline"></span>
+            </div>
+            <span class="reviews-count float-right">
+              3,239 reviews
+            </span>
+          </div>
+          <div class="col-lg-3 col-md-6 visit mb-3" data-aos="fade-right" data-aos-delay="100">
+            <a href="#"><img src="images/img_2.jpg" alt="Image placeholder" class="img-fluid"> </a>
+            <h3><a href="#">Resort &amp; Spa</a></h3>
+            <div class="reviews-star float-left">
+              <span class="ion-android-star"></span>
+              <span class="ion-android-star"></span>
+              <span class="ion-android-star"></span>
+              <span class="ion-android-star-half"></span>
+              <span class="ion-android-star-outline"></span>
+            </div>
+            <span class="reviews-count float-right">
+              4,921 reviews
+            </span>
+          </div>
+          <div class="col-lg-3 col-md-6 visit mb-3" data-aos="fade-right" data-aos-delay="200">
+            <a href="#"><img src="images/img_4.jpg" alt="Image placeholder" class="img-fluid"> </a>
+            <h3><a href="#">Hotel Rooms</a></h3>
+            <div class="reviews-star float-left">
+              <span class="ion-android-star"></span>
+              <span class="ion-android-star"></span>
+              <span class="ion-android-star"></span>
+              <span class="ion-android-star"></span>
+              <span class="ion-android-star-outline"></span>
+            </div>
+            <span class="reviews-count float-right">
+              2,112 reviews
+            </span>
+          </div>
+          <div class="col-lg-3 col-md-6 visit mb-3" data-aos="fade-right" data-aos-delay="300">
+            <a href="#"><img src="images/img_5.jpg" alt="Image placeholder" class="img-fluid"> </a>
+            <h3><a href="#">Mountain Climbing</a></h3>
+            <div class="reviews-star float-left">
+              <span class="ion-android-star"></span>
+              <span class="ion-android-star"></span>
+              <span class="ion-android-star"></span>
+              <span class="ion-android-star"></span>
+              <span class="ion-android-star-outline"></span>
+            </div>
+            <span class="reviews-count float-right">
+              6,421 reviews
+            </span>
+          </div>
+        </div>
+      </div>
+    </section> -->
+    <!-- END section -->
+
+    <footer class="section footer-section">
+      <div class="container">
+        <div class="row mb-4">
+          <div class="col-md-3 mb-5">
+            <h3>Quick Link</h3>
+            <ul class="list-unstyled link">
+              <li><a href="services.html"> Services</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+              <li><a href="terms.html">Terms &amp; Conditions</a></li>
+              <li><a href="privacy.html">Privacy Policy</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3 mb-5">
+            <h3>Support</h3>
+            <ul class="list-unstyled link">
+              <li><a href="contact.html">Send us a message</a></li>
+              <li><a href="contact.html">Call</a></li>
+              <li><a href="contact.html">Email</a></li>
+              <li><a href="contact.html">Locate Us</a></li>
+              <!-- <li><a href="#">Restaurant</a></li> -->
+            </ul>
+          </div>
+          <div class="col-md-3 mb-5 pr-md-5 contact-info">
+            <h3>Contact Info</h3>
+            <p><span class="d-block">Head Office:</span> <span> Office No. 7 Second Floor,
+                Peepul Centre Orchardson
+                Avenue Leicester LE4 6DP
+              </span></p>
+            <p><span class="d-block">Regional Office:</span> <span> 316 Emerald Plaza, Sector 65 Golf Course
+                Extention Road, Gurugram, Haryana, India
+              </span></p>
+          </div>
+          <div class="col-md-3 mb-5">
+            <h3>Subscribe</h3>
+            <p><span class="d-block">Phone:</span> <span> 07359598480</span></p>
+            <p><span class="d-block">Email:</span> <span> info@easymytrips.co.uk</span></p>
+          </div>
+        </div>
+        <div class="row bordertop text-center pt-5">
+          <p class="col-md-12">&copy; Copyright 2024. All Rights Reserved. | easymytips.co.uk</p>
+
+          <p class="col-md-12 social">
+            <a href="contact.html"><span class="fa fa-facebook"></span></a>
+            <a href="contact.html"><span class="fa fa-twitter"></span></a>
+            <a href="contact.html"><span class="fa fa-instagram"></span></a>
+            <a href="contact.html"><span class="fa fa-linkedin"></span></a>
+            <a href="contact.html"><span class="fa fa-youtube"></span></a>
+
+          </p>
+        </div>
+      </div>
+    </footer>
+  </div> <!-- .animsition -->
+
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.fancybox.min.js"></script>
+  <script src="js/animsition.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

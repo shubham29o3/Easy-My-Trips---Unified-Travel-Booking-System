@@ -1,0 +1,630 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Easy My Trips</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link href="https://fonts.googleapis.com/css?family=Mukta+Mahee:200,300,400|Abril+Fatface:400,700" rel="stylesheet">
+
+  <meta name="description" content="Free Template by Free-Template.co" />
+  <meta name="keywords" content="free template, free bootstrap, free website template" />
+  <meta name="author" content="Free-Template.co" />
+
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/aos.css">
+  <link rel="stylesheet" href="css/fancybox.min.css">
+  <link rel="stylesheet" href="css/animsition.min.css">
+
+  <link rel="stylesheet" href="fonts/ionicons/css/ionicons.min.css">
+  <link rel="stylesheet" href="fonts/fontawesome/css/font-awesome.min.css">
+
+  <!-- Theme Style -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- 
+    //////////////////////////////////////////////////////
+
+    Free Template 
+    DESIGNED & DEVELOPED by free-template.co
+      
+    Website:    https://free-template.co
+    Email:      freetemplate.co@gmail.com
+    Twitter:    https://twitter.com/Free_Templateco
+    Facebook:   https://www.facebook.com/Free.Template.co/
+
+    //////////////////////////////////////////////////////
+     -->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    nav {
+      position: fixed;
+      z-index: 99;
+      width: 100%;
+      /* opacity: .4;
+    background: #242526; */
+      /*background: #242526; */
+      background-color: rgb(255, 255, 255);
+
+
+    }
+
+    nav .wrapper {
+      position: relative;
+      max-width: 1300px;
+      padding: 0px 30px;
+      height: 70px;
+      line-height: 70px;
+      margin: auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .wrapper .logo a {
+      color: #000000;
+      font-size: 30px;
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    .wrapper .nav-links {
+      display: inline-flex;
+    }
+
+    .nav-links li {
+      list-style: none;
+    }
+
+    .nav-links li a {
+      color: #000000;
+      text-decoration: none;
+      font-size: 18px;
+      font-weight: 500;
+      padding: 9px 15px;
+      border-radius: 5px;
+      transition: all 0.3s ease;
+    }
+
+    .nav-links li a:hover {
+      background: #3A3B3C;
+    }
+
+    .nav-links .mobile-item {
+      display: none;
+    }
+
+    .nav-links .drop-menu {
+      position: absolute;
+      background: #242526;
+      width: 180px;
+      line-height: 45px;
+      top: 85px;
+      opacity: 0;
+      visibility: hidden;
+      box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+    }
+
+    .nav-links li:hover .drop-menu,
+    .nav-links li:hover .mega-box {
+      transition: all 0.3s ease;
+      top: 70px;
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .drop-menu li a {
+      width: 100%;
+      display: block;
+      padding: 0 0 0 15px;
+      font-weight: 400;
+      border-radius: 0px;
+    }
+
+    .mega-box {
+      position: absolute;
+      left: 0;
+      width: 100%;
+      padding: 0 30px;
+      top: 85px;
+      opacity: 0;
+      visibility: hidden;
+    }
+
+    .mega-box .content {
+      background: #242526;
+      padding: 25px 20px;
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+    }
+
+    .mega-box .content .row {
+      width: calc(25% - 30px);
+      line-height: 45px;
+    }
+
+    .content .row img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .content .row header {
+      color: #ffffff;
+      font-size: 20px;
+      font-weight: 500;
+    }
+
+    .content .row .mega-links {
+      margin-left: -40px;
+      border-left: 1px solid rgba(255, 255, 255, 0.09);
+    }
+
+    .row .mega-links li {
+      padding: 0 20px;
+    }
+
+    .row .mega-links li a {
+      padding: 0px;
+      padding: 0 20px;
+      color: #ffffff;
+      font-size: 17px;
+      display: block;
+    }
+
+    .row .mega-links li a:hover {
+      color: #ffffff;
+    }
+
+    .wrapper .btn {
+      color: #fff;
+      font-size: 20px;
+      cursor: pointer;
+      display: none;
+    }
+
+    .wrapper .btn.close-btn {
+      position: absolute;
+      right: 30px;
+      top: 10px;
+    }
+
+    @media screen and (max-width: 970px) {
+      .wrapper .btn {
+        display: block;
+      }
+
+      .wrapper .nav-links {
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        max-width: 350px;
+        top: 0;
+        left: -100%;
+        background: #242526;
+        display: block;
+        padding: 50px 10px;
+        line-height: 50px;
+        overflow-y: auto;
+        box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.18);
+        transition: all 0.3s ease;
+      }
+
+      /* custom scroll bar */
+      ::-webkit-scrollbar {
+        width: 10px;
+      }
+
+      ::-webkit-scrollbar-track {
+        background: #242526;
+      }
+
+      ::-webkit-scrollbar-thumb {
+        background: #3A3B3C;
+      }
+
+      #menu-btn:checked~.nav-links {
+        left: 0%;
+      }
+
+      #menu-btn:checked~.btn.menu-btn {
+        display: none;
+      }
+
+      #close-btn:checked~.btn.menu-btn {
+        display: block;
+      }
+
+      .nav-links li {
+        margin: 15px 10px;
+      }
+
+      .nav-links li a {
+        padding: 0 20px;
+        display: block;
+        font-size: 20px;
+      }
+
+      .nav-links .drop-menu {
+        position: static;
+        opacity: 1;
+        top: 65px;
+        visibility: visible;
+        padding-left: 20px;
+        width: 100%;
+        max-height: 0px;
+        overflow: hidden;
+        box-shadow: none;
+        transition: all 0.3s ease;
+      }
+
+      #showDrop:checked~.drop-menu,
+      #showMega:checked~.mega-box {
+        max-height: 100%;
+      }
+
+      .nav-links .desktop-item {
+        display: none;
+      }
+
+      .nav-links .mobile-item {
+        display: block;
+        color: #ffffff;
+        font-size: 20px;
+        font-weight: 500;
+        padding-left: 20px;
+        cursor: pointer;
+        border-radius: 5px;
+        transition: all 0.3s ease;
+      }
+
+      .nav-links .mobile-item:hover {
+        background: #3A3B3C;
+      }
+
+      .drop-menu li {
+        margin: 0;
+      }
+
+      .drop-menu li a {
+        border-radius: 5px;
+        font-size: 18px;
+      }
+
+      .mega-box {
+        position: static;
+        top: 65px;
+        opacity: 1;
+        visibility: visible;
+        padding: 0 20px;
+        max-height: 0px;
+        overflow: hidden;
+        transition: all 0.3s ease;
+      }
+
+      .mega-box .content {
+        box-shadow: none;
+        flex-direction: column;
+        padding: 20px 20px 0 20px;
+      }
+
+      .mega-box .content .row {
+        width: 100%;
+        margin-bottom: 15px;
+        border-top: 1px solid rgba(255, 255, 255, 0.08);
+      }
+
+      .mega-box .content .row:nth-child(1),
+      .mega-box .content .row:nth-child(2) {
+        border-top: 0px;
+      }
+
+      .content .row .mega-links {
+        border-left: 0px;
+        padding-left: 15px;
+      }
+
+      .row .mega-links li {
+        margin: 0;
+      }
+
+      .content .row header {
+        font-size: 19px;
+      }
+    }
+
+    nav input {
+      display: none;
+    }
+
+    .body-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 100%;
+      text-align: center;
+      padding: 0 30px;
+    }
+
+    .body-text div {
+      font-size: 45px;
+      font-weight: 600;
+    }
+  </style>
+
+
+</head>
+
+<body>
+  <!-- dkhfbvkebfvk -->
+
+  <nav>
+    <div class="wrapper">
+      <div class="logo"><a href="#">Easy My Trips</a></div>
+      <input type="radio" name="slider" id="menu-btn">
+      <input type="radio" name="slider" id="close-btn">
+      <ul class="nav-links">
+        <label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="terms.html">Terms &amp; Conditions</a></li>
+        <li><a href="privacy.html">Privacy Policy</a></li>
+        <!-- <li>
+            <a href="#" class="desktop-item">Dropdown Menu</a>
+            <input type="checkbox" id="showDrop">
+            <label for="showDrop" class="mobile-item">Dropdown Menu</label>
+            <ul class="drop-menu">
+              <li><a href="#">Drop menu 1</a></li>
+              <li><a href="#">Drop menu 2</a></li>
+              <li><a href="#">Drop menu 3</a></li>
+              <li><a href="#">Drop menu 4</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#" class="desktop-item">Mega Menu</a>
+            <input type="checkbox" id="showMega">
+            <label for="showMega" class="mobile-item">Mega Menu</label>
+            <div class="mega-box">
+              <div class="content">
+                <div class="row">
+                  <img src="https://fadzrinmadu.github.io/hosted-assets/responsive-mega-menu-and-dropdown-menu-using-only-html-and-css/img.jpg" alt="">
+                </div>
+                <div class="row">
+                  <header>Design Services</header>
+                  <ul class="mega-links">
+                    <li><a href="#">Graphics</a></li>
+                    <li><a href="#">Vectors</a></li>
+                    <li><a href="#">Business cards</a></li>
+                    <li><a href="#">Custom logo</a></li>
+                  </ul>
+                </div>
+                <div class="row">
+                  <header>Email Services</header>
+                  <ul class="mega-links">
+                    <li><a href="#">Personal Email</a></li>
+                    <li><a href="#">Business Email</a></li>
+                    <li><a href="#">Mobile Email</a></li>
+                    <li><a href="#">Web Marketing</a></li>
+                  </ul>
+                </div>
+                <div class="row">
+                  <header>Security services</header>
+                  <ul class="mega-links">
+                    <li><a href="#">Site Seal</a></li>
+                    <li><a href="#">VPS Hosting</a></li>
+                    <li><a href="#">Privacy Seal</a></li>
+                    <li><a href="#">Website design</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </li> -->
+        <!-- <li><a href="#">Feedback</a></li> -->
+      </ul>
+      <label for="menu-btn" class="btn menu-btn"><i class="fas fa-bars"></i></label>
+    </div>
+  </nav>
+  <div class="js-animsition animsition" id="site-wrap" data-animsition-in-class="fade-in"
+    data-animsition-out-class="fade-out">
+
+    <header class="site-header">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-4 site-logo" data-aos="fade"><a href="index.html" class="animsition-link">Easy My Trips</a>
+          </div>
+          <div class="col-8">
+
+
+            <div class="site-menu-toggle js-site-menu-toggle" data-aos="fade">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <!-- END menu-toggle -->
+
+            <div class="site-navbar js-site-navbar">
+              <nav role="navigation">
+                <div class="container">
+                  <div class="row full-height align-items-center">
+                    <div class="col-md-12 justify-content-center">
+                      <ul class="list-unstyled menu">
+                        <li><a href="index.html" class="animsition-link">Home</a></li>
+                        <li><a href="services.html" class="animsition-link">Services</a></li>
+                        <li><a href="about.html" class="animsition-link">About Us</a></li>
+                        <!-- <li><a href="gallery.html" class="animsition-link">Gallery</a></li>
+                        <li><a href="blog.html" class="animsition-link">News</a></li> -->
+                        <li><a href="contact.html" class="animsition-link">Contact Us</a></li>
+                        <li class="active"><a href="terms.html" class="animsition-link">Terms &amp; Conditions</a></li>
+                        <li><a href="privacy.html" class="animsition-link">Privacy Policy</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- END head -->
+
+    <section class="site-hero overlay page-inside" style="background-image: url(images/terms.jpg)">
+      <div class="container">
+        <div class="row site-hero-inner justify-content-center align-items-center">
+          <div class="col-md-10 text-center">
+            <h1 class="heading" data-aos="fade-up">Terms &amp; Conditions</h1>
+            <p class="sub-heading mb-5" data-aos="fade-up" data-aos-delay="100">
+              Explore the guidelines that govern your use of our platform. Our Terms and Conditions provide clarity on
+              responsibilities, usage policies, and user rights, ensuring a transparent and secure experience for
+              everyone.
+            </p>
+          </div>
+        </div>
+        <!-- <a href="#" class="scroll-down">Scroll Down</a> -->
+      </div>
+    </section>
+    <!-- END section -->
+
+
+    <section class="section contact-section">
+      <div class="container">
+        <h1 style="text-align: center;">Terms &amp; Conditions</h1>
+        <br>
+        <br>
+        <p>
+          Welcome to easymytrips.co.uk. These Terms and Conditions outline the rules and regulations for the use of our
+          website. By accessing this website, we assume you accept these terms and conditions in full. Do not continue
+          to use our website if you do not accept all the terms and conditions stated on this page.</p>
+        <p>The following terminology applies to these Terms and Conditions, Privacy Statement and Disclaimer Notice, and
+          any or all Agreements: “Client”, “You” and “Your” refers to you, the person accessing this website and
+          accepting the Company’s terms and conditions. “The Company”, “Ourselves”, “We”, “Our” and “Us”, refers to our
+          Company. “Party”, “Parties”, or “Us”, refers to both the Client and ourselves, or either the Client or
+          ourselves. All terms refer to the offer, acceptance, and consideration of payment necessary to undertake the
+          process of our assistance to the Client in the most appropriate manner, whether by formal meetings of a fixed
+          duration, or any other means, for the express purpose of meeting the Client’s needs in respect of the
+          provision of the Company’s stated services/products, in accordance with and subject to, prevailing law.</p>
+        <br>
+        <h3>General:</h3>
+        <p>The content of the pages of this website is for your general information and use only. It is subject to
+          change without notice.
+
+          We use cookies to monitor browsing preferences. If you do allow cookies to be used, the following personal
+          information may be stored by us for use by third parties: IP addresses, search queries, and website navigation
+          data.</p>
+        <p>We will not sell, distribute or lease your personal information to third parties unless we have your
+          permission or are required by law to do so.</p><br>
+        <h3>Pricing and Availability:</h3>
+        <p>We reserve the right to refuse any order you place with us. We may, in our sole discretion, limit or cancel
+          quantities purchased per person, per household or per order. These restrictions may include orders placed by
+          or under the same customer account, the same credit card, and/or orders that use the same billing and/or
+          shipping address. In the event that we make a change to or cancel an order, we may attempt to notify you by
+          contacting the e-mail and/or billing address/phone number provided at the time the order was made.</p><br>
+        <h3>Accuracy of Information:</h3>
+        <p>We reserve the right to modify the contents of this site at any time, but we have no obligation to update any
+          information on our site. You agree that it is your responsibility to monitor changes to our site.</p><br>
+        <h3>Links to Other Websites:</h3>
+        <p>Our website may contain links to third-party websites. These links are provided for your convenience to
+          provide further information. We have no responsibility for the content of linked websites.</p><br>
+        <h3>Copyright:</h3>
+        <p>This website contains material that is owned by or licensed to us. This material includes but is not limited
+          to, the design, layout, look, appearance, and graphics. Reproduction is prohibited other than in accordance
+          with the copyright notice, which forms part of these terms and conditions.</p><br>
+        <h3>Governing Law:</h3>
+        <p>These terms and conditions shall be governed by and construed in accordance with the laws of the United
+          Kingdom and you hereby submit to the exclusive jurisdiction of the courts of England.</p><br>
+        <h3>Changes to Terms and Conditions :</h3>
+        <p>We reserve the right, at our sole discretion, to modify or replace these Terms and Conditions at any time.
+          Your continued use of the website following the posting of any changes to the Terms and Conditions constitutes
+          acceptance of those changes.</p><br>
+        <h3>Contact Us:</h3>
+        <p>If you have any questions about these Terms and Conditions, please contact us at support@easymytrips.co.uk.
+        </p>
+        <p>By using easymytrips.co.uk, you agree to these Terms and Conditions. If you do not agree with these Terms and
+          Conditions, do not use this website.</p><br>
+
+      </div>
+    </section>
+
+    <footer class="section footer-section">
+      <div class="container">
+        <div class="row mb-4">
+          <div class="col-md-3 mb-5">
+            <h3>Quick Link</h3>
+            <ul class="list-unstyled link">
+              <li><a href="services.html">Terms &amp; Services</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+              <li><a href="terms.html">Terms &amp; Conditions</a></li>
+              <li><a href="privacy.html">Privacy Policy</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3 mb-5">
+            <h3>Support</h3>
+            <ul class="list-unstyled link">
+              <li><a href="contact.html">Send us a message</a></li>
+              <li><a href="contact.html">Call</a></li>
+              <li><a href="contact.html">Email</a></li>
+              <li><a href="contact.html">Locate Us</a></li>
+              <!-- <li><a href="#">Restaurant</a></li> -->
+            </ul>
+          </div>
+          <div class="col-md-3 mb-5 pr-md-5 contact-info">
+            <h3>Contact Info</h3>
+            <p><span class="d-block">Head Office:</span> <span> Office No. 7 Second Floor,
+                Peepul Centre Orchardson
+                Avenue Leicester LE4 6DP
+              </span></p>
+            <p><span class="d-block">Regional Office:</span> <span> 316 Emerald Plaza, Sector 65 Golf Course
+                Extention Road, Gurugram, Haryana, India
+              </span></p>
+          </div>
+          <div class="col-md-3 mb-5">
+            <h3>Subscribe</h3>
+            <p><span class="d-block">Phone:</span> <span> 07359598480</span></p>
+            <p><span class="d-block">Email:</span> <span> info@easymytrips.co.uk</span></p>
+          </div>
+        </div>
+        <div class="row bordertop text-center pt-5">
+          <p class="col-md-12">&copy; Copyright 2024. All Rights Reserved. | easymytips.co.uk</p>
+
+          <p class="col-md-12 social">
+            <a href="contact.html"><span class="fa fa-facebook"></span></a>
+            <a href="contact.html"><span class="fa fa-twitter"></span></a>
+            <a href="contact.html"><span class="fa fa-instagram"></span></a>
+            <a href="contact.html"><span class="fa fa-linkedin"></span></a>
+            <a href="contact.html"><span class="fa fa-youtube"></span></a>
+
+          </p>
+        </div>
+      </div>
+    </footer>
+
+  </div> <!-- .animsition -->
+
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.fancybox.min.js"></script>
+  <script src="js/animsition.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
