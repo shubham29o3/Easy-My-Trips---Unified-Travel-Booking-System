@@ -32,7 +32,7 @@ Easy My Trips is a comprehensive booking platform that allows users to seamlessl
 
 1. Clone the repository:
 
-   _git clone https://github.com/shubham29o3/EasyMyTrips-UnifiedTravelBookingSystem.git_
+   git clone `https://github.com/shubham29o3/EasyMyTrips-UnifiedTravelBookingSystem.git`
 
 2. Open `index.html` in your preferred web browser.
 
@@ -56,6 +56,12 @@ If you encounter any issues or have suggestions for improvement, please [open an
 
 For any inquiries or support, feel free to reach out to us at [shubhamsvt29@gmail.com](mailto:shubhamsvt29@gmail.com).
 
-Thank you for choosing Easy My Trips for your travel needs! Happy journey! 🌍✈️🚆🚌🚗🛳️
+Thank you for viewing our work! Do check out more of our projects at [shubham29o3](github.com/shubham29o3).
 
-![These are Sample images](images/buses.jpg)
+Here are a few sample images of the project:
+
+![Sample Image 1](images/sample1.png)
+![Sample Image 2](images/sample2.png)
+![Sample Image 3](images/sample3.png)
+
+We hope you enjoy exploring Easy My Trip! Happy journey! 🌍✈️🚆🚌🚗🛳️
